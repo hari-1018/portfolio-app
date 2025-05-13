@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Hide scrollbar for all browsers */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
