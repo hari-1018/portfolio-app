@@ -5,4 +5,74 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+.animate-spin-slow {
+  animation: spin 4s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+html, body {
+  overflow-x: hidden;
+}
+
+        @keyframes fadeInDown {
+          0% {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes pulseSlow {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
+
+        .animate-fade-in-down {
+          animation: fadeInDown 0.8s ease-out forwards;
+        }
+
+        .animate-fade-in-up {
+          animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-pulse-slow {
+          animation: pulseSlow 2s infinite ease-in-out;
+        }
+
+        .animation-delay-200 {
+          animation-delay: 200ms;
+        }
