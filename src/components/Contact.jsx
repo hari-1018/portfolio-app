@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram, IoLogoWhatsapp, IoIosSend } from "react-icons/io";
+import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram, IoLogoWhatsapp, IoIosSend, IoMdMail, IoIosPhonePortrait } from "react-icons/io";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -53,7 +53,7 @@ export default function ContactForm() {
             
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Your Name*</label>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
                 <input
                   id="name"
                   name="name"
@@ -62,12 +62,12 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="John Doe"
+                  placeholder="Enter Your Name..."
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email*</label>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
                 <input
                   id="email"
                   name="email"
@@ -76,12 +76,12 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="john@example.com"
+                  placeholder="Enter your E-mail..."
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">How can I help?*</label>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">How can I help?</label>
                 <textarea
                   id="message"
                   name="message"
@@ -121,14 +121,20 @@ export default function ContactForm() {
           
           {/* Info Section */}
           <div className="w-full md:w-1/2 bg-black text-white p-6 md:p-8 lg:p-10 flex flex-col justify-center">
-            <h1 className="text-5xl font-bold mb-4">Let's Connect</h1>
-            <p className="mb-8 text-gray-300 text-lg">
+            <h1 className="text-2xl md:text-5xl font-bold mb-4 text-center">Let's Connect</h1>
+            <p className="mb-8 text-gray-300 text-base md:text-lg text-center">
               Let's Talk for Something Special
             </p>
             
-            <div className="space-y-3 text-lg">
-              <p>harikrishnanclt2001@gmail.com</p>
-              <p>8086765870</p>
+            <div className="space-y-3 text-lg text-center">
+              <p className="flex items-center justify-center gap-2">
+                <IoMdMail size={20} />
+                <span>harikrishnanclt2001@gmail.com</span>
+              </p>
+              <p className="flex items-center justify-center gap-2">
+                <IoIosPhonePortrait size={24} />
+                <span>8086765870</span>
+              </p>
             </div>
           </div>
         </div>

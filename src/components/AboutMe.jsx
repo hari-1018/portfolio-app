@@ -30,19 +30,8 @@ const AboutMe = () => {
           </div>
           {/* Buttons Section */}
           <div className="mt-6 flex gap-4">
-            <a
-              href="#contact"
-              // className="bg-yellow-700 text-white px-7 py-2 md:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-yellow-800 transition-colors"
-            >
-              {/* Let's Connect */}<Button />
-            </a>
-            <a
-              href="/Harikrishnan-K.pdf"
-              download
-              // className="bg-black text-white px-4 py-2 md:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-900 transition-colors"
-            >
-              {/* Download Resume */}<Download/>
-            </a>
+            <a href="#contact"><Button /></a>
+            <a href="/Harikrishnan-K.pdf" download><Download/></a>
           </div>
         </div>
 

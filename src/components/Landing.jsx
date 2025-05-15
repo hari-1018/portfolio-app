@@ -64,7 +64,7 @@ const Landing = () => {
         {/* Right Section: Illustration Placeholder */}
         <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
           <img 
-            src="/Group 1000015839.png" 
+            src="/Home.png" 
             alt="Illustration" 
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain"
           />
