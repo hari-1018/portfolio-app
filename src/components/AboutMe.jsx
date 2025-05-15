@@ -2,6 +2,8 @@ import React from "react";
 import { FaBuilding, FaRegLightbulb, FaCalendarAlt, FaSchool, FaUniversity } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoSchool } from "react-icons/io5";
+import Button from "../styles/Connect";
+import Download from "../styles/Download";
 
 const AboutMe = () => {
   return (
@@ -14,17 +16,33 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-6">
-        {/* Image Section with Circular Motion Div */}
-        <div className="w-full md:w-1/2 flex justify-center">
-          <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[380px] lg:h-[380px] flex items-center justify-center drop-shadow-2xl">
+        {/* Image Section with Circular Motion Div and Buttons */}
+        <div className="w-full md:w-1/2 flex flex-col items-center">
+          <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[380px] lg:h-[380px] flex items-center justify-center shadow-4xl">
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-black via-gray-500 to-white p-1.5 animate-spin-slow">
               <div className="w-full h-full rounded-full bg-white"></div>
             </div>
             <img
-              src="/Harikrishnan.png"
+              src="/Profile.jpeg"
               alt="About me illustration"
               className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-[340px] lg:h-[340px] rounded-full object-contain z-10"
             />
+          </div>
+          {/* Buttons Section */}
+          <div className="mt-6 flex gap-4">
+            <a
+              href="#contact"
+              // className="bg-yellow-700 text-white px-7 py-2 md:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-yellow-800 transition-colors"
+            >
+              {/* Let's Connect */}<Button />
+            </a>
+            <a
+              href="/Harikrishnan-K.pdf"
+              download
+              // className="bg-black text-white px-4 py-2 md:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-900 transition-colors"
+            >
+              {/* Download Resume */}<Download/>
+            </a>
           </div>
         </div>
 
@@ -98,13 +116,14 @@ const AboutMe = () => {
                   2020 – 2024
                 </div>
               </div>
+
                 <div className="ml-6 sm:ml-7 mt-4 sm:mt-16">
                   <h2 className="text-base sm:text-lg font-semibold text-yellow-700 mb-2">Diploma in CSE</h2>
                   <div className="hidden md:flex items-center text-sm text-gray-600 mb-2">
                     <FaSchool className="w-4 h-4 mr-1" />
                         Kerala Gov Polytechnic College, Westhill
                   </div>
-                  <div className="flex m:hidden items-center text-sm text-gray-600 mb-2">
+                  <div className="flex md:hidden items-center text-sm text-gray-600 mb-2">
                     <FaSchool className="w-4 h-4 mr-1" />
                         KGPTC, Westhill
                   </div>
@@ -117,7 +136,7 @@ const AboutMe = () => {
                         SBTE, Kerala
                   </div>
                 </div>
-                <div className="mt-4">
+                <div className="mt-3">
                     <div className="flex items-center bg-yellow-100 ml-6 sm:ml-7 text-yellow-800 text-sm px-3 py-2 sm:py-1 rounded-full font-medium w-fit">
                     <FaCalendarAlt className="w-4 h-4 mr-1" />
                     2018 – 2020
