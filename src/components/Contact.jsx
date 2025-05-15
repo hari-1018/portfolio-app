@@ -152,7 +152,7 @@ export default function ContactForm() {
 
       {/* Footer */}
       <div className="w-full max-w-6xl mx-auto mt-6 text-center text-gray-600 text-sm">
-        <p>© {currentYear} Your Company Name. All rights reserved.</p>
+        <p>© {currentYear}. All rights reserved.</p>
       </div>
     </div>
   );
