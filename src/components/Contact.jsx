@@ -114,16 +114,16 @@ export default function ContactForm() {
             </form>
 
             <div className="mt-6 flex space-x-4 justify-center md:justify-start">
-              <a href="#" className="text-gray-600 hover:text-gray-900 bg-gray-200 p-2 rounded-full transition-colors">
+              <a href="https://github.com/hari-1018" className="text-gray-600 hover:text-gray-900 bg-gray-200 p-2 rounded-full transition-colors">
                 <IoLogoGithub size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 bg-gray-200 p-2 rounded-full transition-colors">
+              <a href="https://www.linkedin.com/in/harikrishnan-k2001/" className="text-gray-600 hover:text-gray-900 bg-gray-200 p-2 rounded-full transition-colors">
                 <IoLogoLinkedin size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 bg-gray-200 p-2 rounded-full transition-colors">
+              <a href="https://www.instagram.com/__hari__1810__/" className="text-gray-600 hover:text-gray-900 bg-gray-200 p-2 rounded-full transition-colors">
                 <IoLogoInstagram size={20} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 bg-gray-200 p-2 rounded-full transition-colors">
+              <a href="https://wa.me/+918086765870?text=Hello%20I%20have%20a%20question" className="text-gray-600 hover:text-gray-900 bg-gray-200 p-2 rounded-full transition-colors">
                 <IoLogoWhatsapp size={20} />
               </a>
             </div>

@@ -24,7 +24,7 @@ const Landing = () => {
             pauseBetweenAnimations={1}
           />
 
-          <div className="flex space-x-2 sm:space-x-3 mt-3 mb-3">
+          <div className="flex space-x-2 sm:space-x-3 mt-3 mb-3 justify-center md:justify-start">
             <RotatingText
               texts={['Full-Stack', 'Front-End', 'Web']}
               mainClassName="text-xl sm:text-2xl md:text-3xl text-black font-bold overflow-hidden"
